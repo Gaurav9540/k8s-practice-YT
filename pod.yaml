@@ -11,5 +11,10 @@ spec:
   containers:
     - name: bala
       image: nginx
+      env:
+        - name: myName
+          value: gaurav
+        - name: myCity
+          value: pune
       ports:
         - containerPort: 80
