@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: pod
+
+metadata:
+  name: bala
+  labels:
+    env: dev
+    status: xyz
+
+spec:
+  containers:
+    - name: bala
+      image: nginx
+      ports:
+        - containerPort: 80
