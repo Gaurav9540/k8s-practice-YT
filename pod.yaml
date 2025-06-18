@@ -6,6 +6,7 @@ metadata:
   labels:
     env: dev
     status: xyz
+    team: prod
 
 spec:
   containers:
