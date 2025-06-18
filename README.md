@@ -26,3 +26,8 @@ enter inside container if platform killrcoda
 ```ssh
 kubectl exec -it mypod -- bash
 ```
+
+otherwise use
+```ssh
+kubectl exec -it mypod bash
+```
