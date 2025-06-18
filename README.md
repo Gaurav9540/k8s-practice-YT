@@ -19,5 +19,5 @@ run command in pod's container
 ```ssh
 kubectl exec mypod -c bala env
 ```
-mypod --> pod name
+mypod --> pod name  <br>
 -c bala ---> container name
