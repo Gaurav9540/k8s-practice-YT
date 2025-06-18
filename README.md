@@ -21,3 +21,8 @@ kubectl exec mypod -c bala env
 ```
 mypod --> pod name  <br>
 -c bala ---> container name
+
+enter inside container in killrcoda
+```ssh
+kubectl exec -it mypod -- bash
+```
