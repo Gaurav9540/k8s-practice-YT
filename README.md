@@ -24,10 +24,10 @@ mypod --> pod name  <br>
 
 enter inside container if platform killrcoda
 ```ssh
-kubectl exec -it mypod -- bash
+kubectl exec -it mypod -c bala -- bash
 ```
 
 otherwise use
 ```ssh
-kubectl exec -it mypod bash
+kubectl exec -it mypod -c bala bash
 ```
