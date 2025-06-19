@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: mypod2
+  labels:
+    env: dev
+    status: xyz
+    name: app
+
+spec:
+  containers:
+    - name: bala
+      image: httpd
+      env:
+        - name: myName
+          value: gaurav
+        - name: myCity
+          value: pune
+      ports:
+        - containerPort: 80
