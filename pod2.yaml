@@ -4,9 +4,8 @@ kind: Pod
 metadata:
   name: mypod2
   labels:
-    env: dev
-    status: xyz
-    type: app
+    app: myapp1
+    type: backend
 
 spec:
   containers:
