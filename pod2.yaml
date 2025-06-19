@@ -6,7 +6,7 @@ metadata:
   labels:
     env: dev
     status: xyz
-    name: app
+    type: app
 
 spec:
   containers:
