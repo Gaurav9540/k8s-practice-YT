@@ -32,9 +32,14 @@ otherwise use
 kubectl exec -it mypod -c bala bash
 ```
 
-CLUSTER-IP --> make communication within the cluster <br>
+CLUSTER-IP --> make internal communication within the cluster <br>
 
 expose port with CLUSTER-IP
 ```ssh
 kubectl expose pod <pod_name> --port=800 --target-port=80 --name myservice
+```
+
+NodePort --> 
+```ssh
+kubectl expose pod <pod_name> --type NodePort --port=800 --target-port=80 --name myservice2
 ```
