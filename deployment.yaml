@@ -6,7 +6,13 @@ metadata:
   labels:
     name: firstdeploy
 spec:
-  replicas: 4
+  replicas: 10
+  minReadySeconds: 30
+  strategy:
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+    type: rollingUpdate
   selector:
     matchLabels:
       app: myapp
@@ -19,6 +25,6 @@ spec:
     spec:
       containers:
         - name: container
-          image: httpd
+          image: nginx
           ports:
             - containerPort: 80
