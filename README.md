@@ -43,3 +43,7 @@ NodePort -->
 ```ssh
 kubectl expose pod <pod_name> --type NodePort --port=800 --target-port=80 --name myservice2
 ```
+
+<hr>
+
+ReplicationController
