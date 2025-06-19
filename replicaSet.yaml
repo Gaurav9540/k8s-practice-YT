@@ -16,6 +16,11 @@ spec:
           - myapp1
           - myapp2
 
+      - key: type
+        operator: NotIn
+        values:
+          - backend
+
   template:
     metadata:
       name: pod
