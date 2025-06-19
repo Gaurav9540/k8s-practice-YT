@@ -9,7 +9,7 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchExpression:
+    matchExpressions:
       - key: app
         operator: In
         values:
@@ -17,7 +17,7 @@ spec:
           - myapp2
 
   template:
-    matadata:
+    metadata:
       name: pod
       labels:
         app: myapp1
