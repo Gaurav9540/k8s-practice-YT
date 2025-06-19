@@ -31,3 +31,10 @@ otherwise use
 ```ssh
 kubectl exec -it mypod -c bala bash
 ```
+
+CLUSTER-IP --> make communication within the cluster <br>
+
+expose port with CLUSTER-IP
+```ssh
+kubectl expose pod <pod_name> --port=800 --target-port=80 --name myservice
+```
