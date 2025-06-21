@@ -13,4 +13,4 @@ spec:
       port: 9000
       targetPort: 80
   selector:
-    type: app
+    app: myapp
