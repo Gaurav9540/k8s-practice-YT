@@ -6,8 +6,8 @@ metadata:
   labels:
     name: firstdeploy
 spec:
-  replicas: 10
-  minReadySeconds: 30
+  replicas: 4
+  minReadySeconds: 5
   strategy:
     rollingUpdate:
       maxSurge: 0
