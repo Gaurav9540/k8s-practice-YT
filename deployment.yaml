@@ -5,6 +5,8 @@ metadata:
   name: firstdeploy
   labels:
     name: firstdeploy
+  annotations:
+    kubernetes.io/change-cause: added my custom record
 spec:
   replicas: 4
   minReadySeconds: 5
@@ -24,6 +26,6 @@ spec:
     spec:
       containers:
         - name: container
-          image: httpd
+          image: nginx
           ports:
             - containerPort: 80
