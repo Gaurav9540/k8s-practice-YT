@@ -2,10 +2,10 @@ apiVersion: v1
 kind: Pod
 
 metadata:
-  name: dbpod
+  name: testnspod
   # namespace: test
   labels:
-    app: myapp1
+    app: myapp
 
 spec:
   containers:
