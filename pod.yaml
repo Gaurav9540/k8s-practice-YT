@@ -14,10 +14,10 @@ spec:
       resources:
         requests:
           memory: 250Mi
-          cpu: 0.1
+          cpu: 100m
         limits:
-          memory: 0.5
-          cpu: 500Mi
+          memory: 0.5Mi
+          cpu: 500m
       env:
         - name: myName
           value: gaurav
