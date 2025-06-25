@@ -5,7 +5,7 @@ metadata:
   name: mypod
   # namespace: test
   labels:
-    app: myapp
+    app: myapp1
 
 spec:
   containers:
