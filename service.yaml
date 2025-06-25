@@ -5,6 +5,7 @@ metadata:
   name: myfirstsvc
   labels:
     servicelb: labelname
+    type: app
 
 spec:
   type: NodePort
