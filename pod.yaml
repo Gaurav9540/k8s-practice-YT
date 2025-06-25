@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 
 metadata:
-  name: testnspod4
+  name: testnspod5
   # namespace: test
   labels:
     app: myapp
